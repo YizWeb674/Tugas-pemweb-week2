@@ -1,0 +1,13 @@
+.kontener{
+    width: 100%;
+    background-color: aquamarine;
+    border: 3px solid silver;
+    justify-content: center;
+    display: flex;
+}
+.pict{
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px 40px;
+    border-radius: 10px;
+}
