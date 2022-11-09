@@ -1,0 +1,44 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+}
+#header{
+    text-align: center;
+    background-color: rgb(255, 204, 110);
+    padding: 5px;
+}
+#header h1{
+    color: blue;
+}
+#header blockquote{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.gambar{
+    text-align: center;
+}
+.fp::first-letter{
+    font-size: 40px;
+    color: blue;
+}
+.koleksi{
+    text-align: center;
+}
+.koleksi img{
+    width: 20%;
+}
+.oi
+.pict5{
+    height: 255px;
+}
+.pict6{
+    height: 255px;
+}
