@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM JavaScript</title>
+</head>
+<body>
+    <h1>Belajar Edit Element</h1>
+    <div id="box1">
+        <div id="pi">paragraf 1</div>
+    </div>
+
+    <script>
+        // bikin element baru pake js
+        let el = document.createElement("h2");
+        // nambah kalimat/teks
+        let text = document.createTextNode("Belajar Web");
+        // ambil div atas
+        let box =  document.getElementById("box1");
+
+        // tambah element h2 ke div box
+        el.appendChild(text);
+        box.appendChild(el);
+
+        // edit element
+        let el2 = document.createElement("h2");
+        // nambah kalimat/teks
+        let text2 = document.createTextNode("Belajar Web");
+
+        el2.appendChild(text2)
+
+        let p1 = document.getElementById("p1")
+        box.replaceChild(e12,p1)
+        box.removeChild(el);
+    </script>
+</body>
+</html>

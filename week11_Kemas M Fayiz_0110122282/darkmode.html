@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode</title>
+</head>
+<body>
+    <center>
+    <h2>Please click a bellow button to change background color</h2>
+    <button>Darkmode</button>
+    </center>
+
+    <script>
+        var body = document.querySelector("body");
+        var btn = document.querySelector("button");
+        var darkmode = true
+
+        // jika kondisi darkmode true maka jadi hitam
+        // dan jika false maka jadi putih
+        btn.addEventListener("click", function(){
+            if(darkmode == true){
+                body.style.backgroundColor="black"
+                body.style.color="white"
+                btn.innerHTML = "Light Mode"
+                darkmode = false
+            }
+            else{
+                body.style.backgroundColor="white"
+                body.style.color="black"
+                btn.innerHTML = "DarkMode"
+                darkmode = true
+            }
+        })
+    </script>
+</body>
+</html>
