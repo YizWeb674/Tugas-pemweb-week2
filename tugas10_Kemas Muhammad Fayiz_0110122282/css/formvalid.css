@@ -1,0 +1,60 @@
+body{
+    display: flex;
+}
+
+.outer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 4px solid rgb(255, 191, 108);
+    background-color: rgb(255, 191, 108);
+    border-radius: 15px;
+    padding: 1.5em;
+    margin: 2.5em;
+    width: 33vw;
+}
+
+#judulform{
+    color: rgb(129, 73, 0);
+}
+
+input{
+    border: 2px solid rgb(255, 240, 220);
+    border-radius: 7px;
+    background-color: rgb(255, 240, 220);
+    width: 30vw;
+    height: 5vh;
+    padding: 0 0.5em;
+    margin: 0.3em 0;
+}
+
+span{
+    color: red;
+    font-size: small;
+}
+
+#submitbtn{
+    padding: 0.7em;
+    background-color: rgb(129, 73, 0);
+    border: 1px solid rgb(129, 73, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+}
+
+.hasil{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 4px solid rgb(136, 255, 113);
+    background-color: rgb(136, 255, 113);
+    border-radius: 15px;
+    padding: 1.5em;
+    margin: 2.5em;
+    width: 33vw;
+ }
+
+#hasilTiket{
+    color: rgb(19, 66, 66);
+    margin: 1em 0.5em;
+}
+
+td{
+    padding: 0.5em;
+}

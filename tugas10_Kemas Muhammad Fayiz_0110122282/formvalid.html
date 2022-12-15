@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../tugas/css/formvalid.css">
+</head>
+<body>
+
+    <div class="outer">
+        <h2 id="judulform" ><u>Form Pemesanan Tiket</u></h2>
+            <form onsubmit="return false">
+                Nama Pelanggan : 
+                <br>
+                <input type="text" name="nama" maxlength="30" placeholder="Masukkan nama" id="nama" >
+                <br>
+                <span id="valid-nama"></span>
+                <br><br>
+                Email : 
+                <br>
+                <input type="email" name="email" placeholder="Masukkan email" id="email" >
+                <br>
+                <span id="valid-email"></span>
+                <br><br>
+                Jam Keberangkatan : 
+                <br>
+                <input type="time" name="jam" id="jam" >
+                <br>
+                <span id="valid-jam"></span>
+                <br><br>
+                Tujuan Keberangkatan : 
+                <br>
+                <input type="text" name="tujuan" placeholder="Anda mau kemana?" id="tujuan" >
+                <br>
+                <span id="valid-tujuan"></span>
+                <br><br>
+                Jumlah Tiket : 
+                <br>
+                <input type="number" name="jumlah" placeholder="Untuk berapa orang?" id="jumlah" >
+                <br>
+                <span id="valid-jumlah"></span>
+                <br><br>
+                <button type="submit" id="submitbtn" onclick="validasi()">Pesan Tiket Sekarang!</button>
+            </form>
+    </div>
+    <div class="hasil">
+        <h2 id="hasilTiket"><u>Tiket Anda</u></h2>
+        <table>
+            <tr>
+                <td>Nama Penumpang</td>
+                <td>:</td>
+                <td id="konfNama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td id="konfEmail"></td>
+            </tr>
+            <tr>
+                <td>Jam Keberangkatan</td>
+                <td>:</td>
+                <td id="konfJam"></td>
+            </tr>
+            <tr>
+                <td>Destinasi</td>
+                <td>:</td>
+                <td id="konfTujuan"></td>
+            </tr>
+            <tr>
+                <td>Jumlah Tiket</td>
+                <td>:</td>
+                <td id="konfJumlah"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../tugas/js/formvalid.js"></script>
+</body>
+</html>
